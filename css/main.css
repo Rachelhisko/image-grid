@@ -17,12 +17,13 @@ html {
 }
 
 img {
+  display: block;
   width: 100%;
-  float: right;
 }
 
 body {
   margin: 0;
+  display: block;
 }
 
 img:nth-child(2),
@@ -30,9 +31,46 @@ img:nth-child(5) {
   display: none;
 }
 
+img:nth-child(1) {
+  width: 100%;
+}
 
 @media only screen and (min-width: 25em) {
 
+img {
+  width: 50%;
+  float: left;
+}
+
+img:nth-child(1) {
+  width: 100%;
+}
+
+img:nth-child(2),
+img:nth-child(5) {
+  display: block;
+}
+
+}
+
 @media only screen and (min-width: 38em) {
 
+  img:nth-child(1) {
+    width: 100%;
+  }
+
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 50%;
+    float: left;
+  }
+
+}
 @media only screen and (min-width: 60em) {
+
+  img:nth-child(1) {
+    width: 100%;
+  }
+
+}
